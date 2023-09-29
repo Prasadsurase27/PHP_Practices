@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(128, 56, 84);
+} 
+
+.registration{
+    
+    width: 400px;
+    height: 500px;
+    background-color: cadetblue;
+    margin: 0 auto;
+    text-align: center;
+}
+p{
+    
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: brown;
+    font-weight: initial;
+}
+div{
+    font-size: large;
+    color:rgb(8, 8, 8);
+    border-radius: 5px;
+}
+a{
+    color: rgb(31, 14, 158);
+}
+.btn{
+    border: none;
+    color: white;
+    margin: 8px;
+    background-color: black;
+    font-family:monospace;
+    display: inline-block;
+    font-size: 20px;
+    padding: 8px 8px;
+    border-radius: 5px;
+    position:relative;
+    transition: duration 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0s;
+}
+.btn:active{
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgb(197, 20, 20);
+}
+#password,#username,#confirmpass{
+    border: none;
+    padding: 4px 15px;
+    border-radius: 5px;
+    
+}

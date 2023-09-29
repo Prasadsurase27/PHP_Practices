@@ -1,0 +1,33 @@
+body{
+
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    padding: 0;
+    color: rgb(241, 239, 249);
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.login{
+    text-align: center;
+    width: 300px;
+    height:400px;
+    background-color:rgba(161, 45, 194, 0.749);
+    overflow: hidden;
+    margin: 10;
+}
+
+
+h3{
+    text-align: center;
+    padding-top: 10%;
+    justify-content: center;
+}
+#log{
+    background-color: rgb(56, 56, 241);
+    color:white;
+    
+}
