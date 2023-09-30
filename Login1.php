@@ -31,7 +31,7 @@
 <? 
 if(isset($_POST["Username"]) && isset($_POST["Pass"])){
     $uname=$_POST["Username"];
-    $Passs=$_POST["Passs"];
+    $Passs=$_POST["Pass"];
     echo "username Recived:".$uname;
     echo "Password Recived:".$Passs;
 }

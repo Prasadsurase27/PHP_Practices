@@ -34,15 +34,16 @@ Registration Form
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>User Registration</title>
 </head>
-<body>
+<body class="flex">
   <h2>User Registration</h2>
-  <form action="register.php" method="POST">
+  <form action="login.php" method="POST">
     <label for="username">Username:</label><br>
-    <input type="text" id="username" name="username"><br>
+    <input type="text" id="username" name="username" require><br>
     <label for="password">Password:</label><br>
-    <input type="password" id="password" name="password"><br><br>
-    <input type="submit" value="Register">
+    <input type="password" id="password" name="password" require><br><br>
+    <input type="submit" value="register">
   </form>
+
 </body>
 </html>
 
@@ -60,14 +61,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = mysqli_real_escape_string($conn, $password);
 
     // Hash the password
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+    //$hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-    $query = "INSERT INTO users (username, password) VALUES ('$username', '$hashed_password')";
+    $query = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
     if (mysqli_query($conn, $query)) {
         echo "User registered successfully.";
     } else {
         echo "Error: " . mysqli_error($conn);
     }
 }
+mysqli_close($conn);
 ?>
 
